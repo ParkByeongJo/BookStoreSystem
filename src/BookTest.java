@@ -2,12 +2,12 @@
 public class BookTest {
 
 	public static void main(String[] args) {
-		// 3°³ÀÇ Book °´Ã¼ »ı¼º - book1Àº "Java", 20000, book2´Â "Database", 30000À¸·Î ÃÊ±âÈ­
-		Book book1 =  new Book("µ¥ÀÌÅÍº£ÀÌ½º °³·Ğ",20000);
-		Book book2 =  new Book("¸ğ¹ÙÀÏ ÇÁ·Î±×·¡¹Ö",30000);
-		Book book3 =  new Book("C++ ÇÁ·Î±×·¡¹Ö",40000);
+		// 3ê°œì˜ Book ê°ì²´ ìƒì„± - book1ì€ "Java", 20000, book2ëŠ” "Database", 30000ìœ¼ë¡œ ì´ˆê¸°í™”
+		Book book1 =  new Book("ë°ì´í„°ë² ì´ìŠ¤ ê°œë¡ ",20000);
+		Book book2 =  new Book("ëª¨ë°”ì¼ í”„ë¡œê·¸ë˜ë°",30000);
+		Book book3 =  new Book("C++ í”„ë¡œê·¸ë˜ë°",40000);
 
-		// book1, book2¿¡ ´ëÇØ ¿©·¯ ÀÛ¾÷À» ¼öÇàÇÏ´Â midExam() ¸Ş¼Òµå È£Ãâ
+		// book1, book2ì— ëŒ€í•´ ì—¬ëŸ¬ ì‘ì—…ì„ ìˆ˜í–‰í•˜ëŠ” midExam() ë©”ì†Œë“œ í˜¸ì¶œ
 		midExam(book1);
 		midExam(book2);
 		midExam(book3);
@@ -15,21 +15,21 @@ public class BookTest {
 
 	private static void midExam(Book book) {
 
-		// ¸Å°³º¯¼ö·Î ¹ŞÀº bookÀÇ µµ¼­¸í Ãâ·Â, °¡°İ Ãâ·Â
-		System.out.println("Ã¥ Á¦¸ñ:"+book.getTitle());
-		System.out.println("¿ø°¡:"+book.getPrice()+"¿ø");
+		// ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ì€ bookì˜ ë„ì„œëª… ì¶œë ¥, ê°€ê²© ì¶œë ¥
+		System.out.println("ì±… ì œëª©:"+book.getTitle());
+		System.out.println("ì›ê°€:"+book.getPrice()+"ì›");
 
-		// book °¡°İÀ» 1000¿ø ÀÎ»ó
-        book.raise(1000);
+		// book ê°€ê²©ì„ 1000ì› ì¸ìƒ
+                book.raise(1000);
 
-		// bookÀÇ °¡°İ Ãâ·Â
-		System.out.println("1000¿ø ÀÎ»ó °¡°İ:"+book.getPrice()+"¿ø");
+		// bookì˜ ê°€ê²© ì¶œë ¥
+		System.out.println("1000ì› ì¸ìƒ ê°€ê²©:"+book.getPrice()+"ì›");
 
-		// book °¡°İÀ» ¿ø°¡ÀÇ 50%·Î ÀÎ»ó
-        book.raise((book.getPrice()-1000)/2);
+		// book ê°€ê²©ì„ ì›ê°€ì˜ 50%ë¡œ ì¸ìƒ
+                book.raise((book.getPrice()-1000)/2);
 
-		// bookÀÇ °¡°İ Ãâ·Â
-		System.out.println("¿ø°¡ÀÇ 50% ÀÎ»ó °¡°İ:"+(book.getPrice()-1000)+"¿ø");
+		// bookì˜ ê°€ê²© ì¶œë ¥
+		System.out.println("ì›ê°€ì˜ 50% ì¸ìƒ ê°€ê²©:"+(book.getPrice()-1000)+"ì›");
 		System.out.println(" ");
 	}
 
